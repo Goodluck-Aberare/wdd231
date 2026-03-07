@@ -94,3 +94,21 @@ footer {
   text-align: center;
   padding: 10px;
 }
+
+/* Social icons */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.social a img {
+  width: 14px;   /* reduced size */
+  height: 14px;
+  transition: transform 0.3s ease;
+}
+
+.social a img:hover {
+  transform: scale(1.2); /* subtle zoom on hover */
+}
