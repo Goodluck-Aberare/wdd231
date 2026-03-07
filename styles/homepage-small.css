@@ -1,0 +1,96 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+header {
+  background: #222;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-name img {
+  width: 40px;
+}
+
+#menuBtn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  background: #333;
+}
+
+nav a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #555;
+}
+
+nav.open {
+  display: flex;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 1rem;
+  background: #eee;
+  padding: 10px;
+}
+
+.photo img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: auto;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+#courses {
+  display: grid;
+  gap: 10px;
+}
+
+.course {
+  padding: 10px;
+  background: #ccc;
+  text-align: center;
+}
+
+.completed {
+  background: #2c7be5;
+  color: white;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

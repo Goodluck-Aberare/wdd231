@@ -1,0 +1,44 @@
+@media (min-width: 768px) {
+  #menuBtn {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+    background: none;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  h1 {
+    grid-column: 1 / 3;
+  }
+
+  .about {
+    grid-column: 1 / 2;
+  }
+
+  .photo {
+    grid-column: 2 / 3;
+  }
+
+  .courses {
+    grid-column: 1 / 3;
+  }
+
+  #courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

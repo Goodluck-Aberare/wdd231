@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student homepage for WDD131">
+  <meta name="author" content="Goodluck Aberare">
+
+  <title>WDD131 Home</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-name">
+      <img src="images/logo.svg" alt="logo">
+      <span>Goodluck Aberare</span>
+    </div>
+
+    <button id="menuBtn">☰</button>
+
+    <nav id="navMenu">
+      <a href="#">Home</a>
+      <a href="#">Chamber Project</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I am learning web frontend development and building responsive websites
+        using HTML, CSS and JavaScript.
+      </p>
+    </section>
+
+    <section class="photo">
+      <h2>Student Photo</h2>
+      <img src="images/profile.jpg" alt="Student Photo">
+    </section>
+
+    <section class="courses">
+      <h2>Web Certificate Courses</h2>
+
+      <div class="buttons">
+        <button id="all">All</button>
+        <button id="cse">CSE</button>
+        <button id="wdd">WDD</button>
+      </div>
+
+      <div id="courses"></div>
+      <p id="totalCredits"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">X</a>
+    </div>
+
+    <p>
+      © <span id="year"></span> Goodluck Aberare | Nigeria
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
