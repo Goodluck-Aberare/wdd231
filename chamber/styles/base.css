@@ -1,0 +1,18 @@
+/* Directory Grid View */
+#directory-cards.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+/* Directory List View (Default) */
+#directory-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+#directory-cards section {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 0.5rem;
+}

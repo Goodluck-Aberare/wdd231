@@ -1,0 +1,21 @@
+<form method="get" action="thankyou.html">
+  <label>First Name: <input type="text" name="fname" required></label>
+  <label>Organization Title: <input type="text" name="title" pattern="[a-zA-Z -]{10,}"></label>
+  <label>Email: <input type="email" name="email" required placeholder="example@gmail.com"></label>
+  
+  <fieldset>
+    <legend>Membership Level</legend>
+    <label><input type="radio" name="level" value="np"> NP (Non-Profit)</label>
+    <label><input type="radio" name="level" value="bronze"> Bronze</label>
+    <label><input type="radio" name="level" value="silver"> Silver</label>
+    <label><input type="radio" name="level" value="gold"> Gold</label>
+  </fieldset>
+
+  <input type="hidden" id="timestamp" name="timestamp">
+  <input type="submit" value="Join the Chamber">
+</form>
+
+<script>
+  // Set the hidden timestamp to the current time in milliseconds
+  document.getElementById('timestamp').value = Date.now();
+</script>

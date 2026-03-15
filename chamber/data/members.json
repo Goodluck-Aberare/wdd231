@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Silver Crest Cafe",
+    "address": "123 Main St, Lagos",
+    "phone": "+234 800 123 4567",
+    "website": "https://silvercrest.com",
+    "image": "images/cafe-logo.webp",
+    "membershipLevel": 3,
+    "other": "Best coffee in town."
+  },
+  {
+    "name": "Tech Solutions Ltd",
+    "address": "45 Innovation Way, Abuja",
+    "phone": "+234 900 987 6543",
+    "website": "https://techsol.com",
+    "image": "images/tech-logo.webp",
+    "membershipLevel": 2,
+    "other": "Award-winning IT support."
+  }
+]

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timbuktu Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to Timbuktu Chamber of Commerce</h1>
+      <button>Keynote Tickets</button>
+    </section>
+
+    <section class="community">
+      <h2>Community Information</h2>
+      <p>Connecting businesses and people in Timbuktu.</p>
+    </section>
+
+    <section class="weather">
+      <h2>Current Weather</h2>
+      <div id="weather-widget"></div>
+    </section>
+
+    <section class="spotlights">
+      <h2>Business Spotlights</h2>
+      <div id="spotlight-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 20xx Timbuktu Chamber of Commerce</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
