@@ -3,10 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Directory</title>
+  <title>Directory | True Light Analytics</title>
+  <meta name="description" content="Explore the True Light Analytics business directory and discover members across industries, from non-profits to gold-level partners.">
+  <meta name="author" content="Goodluck Aberare">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="True Light Analytics Business Directory">
+  <meta property="og:description" content="Browse the True Light Analytics directory to connect with businesses and organizations driving innovation and growth.">
+  <meta property="og:image" content="https://yourdomain.com/images/og-directory.jpg">
+  <meta property="og:url" content="https://yourdomain.com/directory.html">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
 </head>
+
 <body>
   <header>
     <nav>
@@ -19,13 +30,17 @@
 
   <main>
     <h1>Business Directory</h1>
-    <div id="directory"></div>
+    <div class="view-toggle">
+      <button id="grid">Grid View</button>
+      <button id="list">List View</button>
+    </div>
+    <div id="directory-cards"></div>
   </main>
 
   <footer>
-    <p>True light Analytics</p>
+    <p>True Light Analytics</p>
   </footer>
 
-  <script src="scripts/directory.js"></script>
+  <script src="scripts/directory.js" defer></script>
 </body>
 </html>
