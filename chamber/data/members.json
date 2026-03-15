@@ -1,20 +1,66 @@
 [
   {
-    "name": "Silver Crest Cafe",
-    "address": "123 Main St, Lagos",
-    "phone": "+234 800 123 4567",
-    "website": "https://silvercrest.com",
-    "image": "images/cafe-logo.webp",
-    "membershipLevel": 3,
-    "other": "Best coffee in town."
+    "name": "Data Leum",
+    "address": "123 Desert Road, Timbuktu",
+    "phone": "+234-800-555-1234",
+    "website": "https://dataleum.com",
+    "image": "images/dataleum.png",
+    "membership": "Gold"
   },
   {
-    "name": "Tech Solutions Ltd",
-    "address": "45 Innovation Way, Abuja",
-    "phone": "+234 900 987 6543",
-    "website": "https://techsol.com",
-    "image": "images/tech-logo.webp",
-    "membershipLevel": 2,
-    "other": "Award-winning IT support."
+    "name": "Tech 365 Solutions",
+    "address": "45 Artisan Street, Timbuktu",
+    "phone": "+234-800-555-5678",
+    "website": "https://tech365.com",
+    "image": "images/tech365.png",
+    "membership": "Silver"
+  },
+  {
+    "name": "Lagos Data",
+    "address": "78 Market Square, Timbuktu",
+    "phone": "+234-800-555-9012",
+    "website": "https://lagosdata.com",
+    "image": "images/lagosdata.png",
+    "membership": "Bronze"
+  },
+  {
+    "name": "Data tech",
+    "address": "12 Sustainability Avenue, Timbuktu",
+    "phone": "+234-800-555-3456",
+    "website": "https://greenfuture.org",
+    "image": "images/datatech.png",
+    "membership": "Non-Profit"
+  },
+  {
+    "name": "True Light Analytics",
+    "address": "99 Innovation Hub, Timbuktu",
+    "phone": "+234-800-555-7890",
+    "website": "https://truelightanalytics.com",
+    "image": "images/truelight.png",
+    "membership": "Gold"
+  }
+  {
+    "name": "Mustab",
+    "address": "99 Innovation Hub, Timbuktu",
+    "phone": "+234-800-555-7890",
+    "website": "https://Mustab.com",
+    "image": "images/mustab.png",
+    "membership": "Gold"
+  }
+  {
+    "name": "Tech school",
+    "address": "99 Innovation Hub, Timbuktu",
+    "phone": "+234-800-555-7890",
+    "website": "https://techschool.com",
+    "image": "images/techschool.png",
+    "membership": "Gold"
+  }
+  {
+    "name": "Daelites Community Lagos",
+    "address": "99 Innovation Hub, Timbuktu",
+    "phone": "+234-800-555-7890",
+    "website": "https://techschool.com",
+    "image": "images/techschool.png",
+    "membership": "Gold"
   }
 ]
