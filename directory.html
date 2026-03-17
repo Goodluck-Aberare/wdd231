@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Directory | Chamber Project</title>
+  <meta name="description" content="Business directory for the Chamber Project. Discover local businesses and learn about company policies.">
+  <meta name="author" content="Goodluck Aberare">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="icon" href="images/logo.jpeg" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="logo-name">
+      <img src="images/logo.jpeg" alt="logo">
+      <span>Goodluck Aberare</span>
+    </div>
+
+    <button id="menuBtn">☰</button>
+
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main class="directory-layout">
+    <!-- Left side: business images + names -->
+    <section class="business-list">
+      <h1>Business Directory</h1>
+      <div class="business-card">
+        <img src="images/data_leum.png" alt="Data Leum">
+        <p>Data Leum</p>
+      </div>
+      <div class="business-card">
+        <img src="images/datatech.jfif" alt="Data Tech">
+        <p>Data Tech</p>
+      </div>
+      <div class="business-card">
+        <img src="images/tech_school.png" alt="Tech School">
+        <p>Tech School </p>
+      </div>
+      <div class="business-card">
+        <img src="images/mustab.jfif" alt="Mustab Analytics">
+        <p>Mustab Analytics</p>
+      </div>
+      <div class="business-card">
+        <img src="images/tech_365.png" alt="Tech365">
+        <p>Tech 365</p>
+      </div>
+      <div class="business-card">
+        <img src="images/lagos_data.png" alt="Lagos Data">
+        <p>Lagos Data</p>
+      </div>
+    </section>
+
+    <!-- Right side: company policies -->
+    <section class="policies">
+      <h2>Company Policies</h2>
+      <p>
+        Our Chamber members are committed to ethical business practices,
+        transparency, and community development. Each business agrees to
+        uphold fair trade standards, respect environmental sustainability,
+        and foster innovation.
+      </p>
+      <p>
+        Policies emphasize collaboration, inclusivity, and continuous
+        improvement. Members are encouraged to share knowledge, support
+        local initiatives, and contribute to the growth of the wider
+        business community.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/yourusername" target="_blank">
+        <img src="images/github.jpg" alt="GitHub">
+      </a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank">
+        <img src="images/linkedin.jpg" alt="LinkedIn">
+      </a>
+      <a href="https://x.com/yourusername" target="_blank">
+        <img src="images/x.jpg" alt="X (Twitter)">
+      </a>
+    </div>
+    <p>© <span id="year"></span> Goodluck Aberare | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/directory_navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+</body>
+</html>
