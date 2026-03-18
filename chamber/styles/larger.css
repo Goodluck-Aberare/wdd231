@@ -1,48 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Timbuktu Chamber of Commerce</title>
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/larger.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="discover.html">Discover</a>
-      <a href="directory.html">Directory</a>
-      <a href="join.html">Join</a>
-    </nav>
-  </header>
+@media (min-width: 768px) {
+  /* Hide hamburger menu on larger screens */
+  #menuBtn {
+    display: none;
+  }
 
-  <main>
-    <section class="hero">
-      <h1>Welcome to Timbuktu Chamber of Commerce</h1>
-      <button>Keynote Tickets</button>
-    </section>
+  /* Horizontal navigation */
+  nav {
+    display: flex;
+    gap: 20px;
+    background: none;
+  }
 
-    <section class="community">
-      <h2>Community Information</h2>
-      <p>Connecting businesses and people in Timbuktu.</p>
-    </section>
+  nav a {
+    padding: 10px;
+  }
 
-    <section class="weather">
-      <h2>Current Weather</h2>
-      <div id="weather-widget"></div>
-    </section>
+  /* Grid layout for main content */
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
 
-    <section class="spotlights">
-      <h2>Business Spotlights</h2>
-      <div id="spotlight-container"></div>
-    </section>
-  </main>
+  h1 {
+    grid-column: 1 / 3;
+  }
 
-  <footer>
-    <p>&copy; 20xx Timbuktu Chamber of Commerce</p>
-  </footer>
+  .about {
+    grid-column: 1 / 2;
+  }
 
-  <script src="scripts/main.js"></script>
-</body>
-</html>
+  .photo {
+    grid-column: 2 / 3;
+    text-align: center;
+  }
+
+  .courses {
+    grid-column: 1 / 3;
+  }
+
+  /* Courses grid */
+  #courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  /* Business list grid */
+  .business-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+  }
+
+  .business-card {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+  }
+
+  /* Social icons alignment */
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+}
