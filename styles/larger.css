@@ -47,6 +47,21 @@
     gap: 15px;
   }
 
+  /* Business list grid */
+  .business-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .business-card {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+  }
+
   /* Social icons alignment */
   .social {
     display: flex;
