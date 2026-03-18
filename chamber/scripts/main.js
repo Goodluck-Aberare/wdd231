@@ -1,10 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Example: Weather widget placeholder
+  // Weather widget placeholder
   const weather = document.getElementById("weather-widget");
   if (weather) {
     weather.textContent = "75°F, Partly Cloudy (High: 85°, Low: 52°)";
   }
 
-  // Example: Business spotlight placeholder
+  // Business spotlight placeholder
   const spotlight = document.getElementById("spotlight-container");
-  if (spotlight)
+  if (spotlight) {
+    spotlight.innerHTML = `
+      <section>
+        <h3>Featured Partner</h3>
+        <p>True Light Analytics collaborates with leading organizations worldwide.</p>
+      </section>
+    `;
+  }
+});

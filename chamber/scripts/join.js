@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", (event) => {
     event.preventDefault(); // Prevent page reload
 
-    // Collect form data
     const formData = new FormData(form);
     const member = {
       name: formData.get("name"),
@@ -15,19 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
       level: formData.get("level")
     };
 
-    // Simple validation
     if (!member.name || !member.business || !member.email) {
       alert("Please fill out all required fields (Name, Business, Email).");
       return;
     }
 
-    // Display confirmation message
     alert(`Thank you, ${member.name}! Your application for the ${member.level} membership has been submitted.`);
 
-    // Optionally: log to console (could be sent to server later)
     console.log("New Member Application:", member);
 
-    // Reset form
     form.reset();
   });
 });
