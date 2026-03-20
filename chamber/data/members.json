@@ -56,5 +56,18 @@
       "website": "https://abujadata.com",
       "membership": "Bronze"
     }
+    {
+      "name": "Stata",
+      "address": "55 Data Street, Abuja",
+      "phone": "+234 806 789 0123",
+      "website": "https://stata.com",
+      "membership": "Bronze"
+    }{
+      "name": "Data Lab",
+      "address": "55 Data Street, Abuja",
+      "phone": "+234 806 789 0123",
+      "website": "https://datalab.com",
+      "membership": "Bronze"
+    }
   ]
 }
