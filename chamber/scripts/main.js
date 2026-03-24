@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Toggle nav menu for mobile
+  // ✅ Toggle nav menu for mobile
   const menuBtn = document.querySelector("#menuBtn");
   const nav = document.querySelector("#navMenu");
   if (menuBtn && nav) {
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Weather API integration
+  // ✅ Weather API integration
   const weatherWidget = document.getElementById("weather-widget");
   if (weatherWidget) {
     const apiKey = "YOUR_API_KEY"; // Replace with your OpenWeatherMap API key
@@ -38,16 +38,20 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-  // Business Spotlight
+  // ✅ Business Spotlight
   const spotlight = document.getElementById("spotlight-container");
   if (spotlight) {
     fetch("members.json")
       .then(res => res.json())
       .then(data => {
         if (data.members && data.members.length > 0) {
+          // Filter Gold and Silver members
           const goldSilver = data.members.filter(m => m.membership === "Gold" || m.membership === "Silver");
+
+          // Randomly select up to 3 members
           const randomMembers = goldSilver.sort(() => 0.5 - Math.random()).slice(0, 3);
 
+          // Render spotlight cards
           spotlight.innerHTML = randomMembers.map(m => `
             <div class="member-card">
               <img src="${m.image}" alt="${m.name} Logo">

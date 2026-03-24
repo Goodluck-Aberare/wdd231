@@ -42,7 +42,7 @@ header {
 }
 
 nav {
-  display: none; /* hidden by default on mobile */
+  display: none;
   flex-direction: column;
   background: #333;
 }
@@ -74,6 +74,7 @@ section {
 }
 
 .hero {
+  background-image: url("images/chamber_hero.jpg");
   background-size: cover;
   background-position: center;
   color: white;
