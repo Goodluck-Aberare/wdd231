@@ -6,48 +6,94 @@
   <title>Join | True Light Analytics</title>
   <meta name="description" content="Apply to join True Light Analytics Chamber with membership levels: Non-Profit, Bronze, Silver, and Gold.">
   <meta name="author" content="Goodluck Aberare">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
+
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Join True Light Analytics Chamber">
+  <meta property="og:description" content="Become part of True Light Analytics Chamber. Choose your membership level and grow with us.">
+  <meta property="og:url" content="https://www.truelightanalytics.com/join.html">
+  <meta property="og:image" content="https://www.truelightanalytics.com/images/chamber_hero.jpg">
 </head>
 <body>
   <header>
-    <nav>
+    <div class="logo-name">
+      <img src="images/logo.jpeg" alt="True Light Analytics Logo">
+      <h1>True Light Analytics</h1>
+    </div>
+    <button id="menuBtn">☰</button>
+    <nav id="navMenu">
       <a href="index.html">Home</a>
       <a href="discover.html">Discover</a>
       <a href="directory.html">Directory</a>
-      <a href="join.html">Join</a>
+      <a href="join.html" class="active">Join</a>
     </nav>
   </header>
 
   <main>
-    <h1>Join True Light Analytics</h1>
-    <form id="joinForm" method="get" action="thankyou.html">
-      <label>First Name:
-        <input type="text" name="name" required>
-      </label>
-      <label>Business:
-        <input type="text" name="business" required>
-      </label>
-      <label>Email:
-        <input type="email" name="email" required placeholder="example@gmail.com">
-      </label>
-      <label>Phone:
-        <input type="tel" name="phone">
-      </label>
-      <label>Website:
-        <input type="url" name="url">
-      </label>
+    <section class="hero" style="background-image:url('images/join_us.webp');">
+      <h1>Join True Light Analytics</h1>
+      <p>Become part of our chamber and connect with businesses, insights, and opportunities.</p>
+    </section>
 
-      <fieldset>
-        <legend>Membership Level</legend>
-        <label><input type="radio" name="level" value="np" required> NP (Non-Profit)</label>
-        <label><input type="radio" name="level" value="bronze"> Bronze</label>
-        <label><input type="radio" name="level" value="silver"> Silver</label>
-        <label><input type="radio" name="level" value="gold"> Gold</label>
-      </fieldset>
+    <section class="join-form">
+      <form id="joinForm" method="get" action="thankyou.html">
+        <label>First Name:
+          <input type="text" name="name" required>
+        </label>
+        <label>Business:
+          <input type="text" name="business" required>
+        </label>
+        <label>Email:
+          <input type="email" name="email" required placeholder="example@gmail.com">
+        </label>
+        <label>Phone:
+          <input type="tel" name="phone">
+        </label>
+        <label>Website:
+          <input type="url" name="url">
+        </label>
 
-      <input type="hidden" id="timestamp" name="timestamp">
-      <input type="submit" value="Join the Chamber">
-    </form>
- 
+        <fieldset>
+          <legend>Membership Level</legend>
+          <label><input type="radio" name="level" value="np" required> NP (Non-Profit)</label>
+          <label><input type="radio" name="level" value="bronze"> Bronze</label>
+          <label><input type="radio" name="level" value="silver"> Silver</label>
+          <label><input type="radio" name="level" value="gold"> Gold</label>
+        </fieldset>
+
+        <input type="hidden" id="timestamp" name="timestamp">
+        <input type="submit" value="Join the Chamber">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="#"><img src="images/x_twitter.jpg" alt="X Twitter"></a>
+      <a href="#"><img src="images/github.jpg" alt="GitHub"></a>
+      <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+    </div>
+    <p>&copy; 2026 True Light Analytics</p>
+  </footer>
+
+  <script>
+    // Auto-fill timestamp on form submit
+    document.addEventListener("DOMContentLoaded", () => {
+      const timestampField = document.getElementById("timestamp");
+      if (timestampField) {
+        timestampField.value = new Date().toISOString();
+      }
+    });
+  </script>
+</body>
+</html>

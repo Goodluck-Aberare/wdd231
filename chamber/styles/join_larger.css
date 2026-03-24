@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+  #menuBtn {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+    background: none;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .hero {
+    grid-column: 1 / 3;
+    padding: 40px 20px; /* slightly more padding on larger screens */
+  }
+
+  .join-form {
+    grid-column: 1 / 3;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+}

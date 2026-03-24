@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | True Light Analytics</title>
+  <meta name="description" content="Thank you for joining True Light Analytics Chamber of Commerce.">
+  <meta name="author" content="Goodluck Aberare">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Thank You for Joining True Light Analytics">
+  <meta property="og:description" content="Your membership application has been received. Welcome to the True Light Analytics Chamber of Commerce.">
+  <meta property="og:url" content="https://www.truelightanalytics.com/thankyou.html">
+  <meta property="og:image" content="https://www.truelightanalytics.com/images/chamber_hero.jpg">
+</head>
+<body>
+  <header>
+    <div class="logo-name">
+      <img src="images/true_light_logo.png" alt="True Light Analytics Logo">
+      <h1>True Light Analytics</h1>
+    </div>
+    <button id="menuBtn">☰</button>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Thank You!</h1>
+      <p>Your membership application has been submitted successfully.</p>
+    </section>
+
+    <section class="confirmation">
+      <h2>Welcome to the Chamber</h2>
+      <p>We’re excited to have you join True Light Analytics Chamber of Commerce.  
+      Our team will review your application and contact you shortly with next steps.</p>
+      <p><a href="index.html" class="button">Return to Home</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+    </div>
+    <p>&copy; 2026 True Light Analytics</p>
+  </footer>
+
+  <script>
+    // Toggle nav menu
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuBtn = document.querySelector("#menuBtn");
+      const nav = document.querySelector("#navMenu");
+      if (menuBtn && nav) {
+        menuBtn.addEventListener("click", () => {
+          nav.classList.toggle("open");
+        });
+      }
+    });
+  </script>
+</body>
+</html>
