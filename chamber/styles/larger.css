@@ -1,10 +1,8 @@
 @media (min-width: 768px) {
-  /* Hide hamburger menu on larger screens */
   #menuBtn {
     display: none;
   }
 
-  /* Horizontal navigation */
   nav {
     display: flex;
     gap: 20px;
@@ -15,7 +13,6 @@
     padding: 10px;
   }
 
-  /* Grid layout for main content */
   main {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -27,34 +24,17 @@
     grid-column: 1 / 3;
   }
 
-  .about {
-    grid-column: 1 / 2;
-  }
-
-  .photo {
-    grid-column: 2 / 3;
-    text-align: center;
-  }
-
-  .courses {
+  .spotlights {
     grid-column: 1 / 3;
   }
 
-  /* Courses grid */
-  #courses {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-  }
-
-  /* Business list grid */
   .business-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
-  .business-card {
+  .member-card {
     text-align: center;
     border: 1px solid #ccc;
     padding: 10px;
@@ -62,7 +42,13 @@
     border-radius: 5px;
   }
 
-  /* Social icons alignment */
+  .member-card img {
+    width: 100%;
+    max-width: 150px;
+    display: block;
+    margin: auto;
+  }
+
   .social {
     display: flex;
     justify-content: center;

@@ -22,7 +22,7 @@ async function loadMembers() {
 
 loadMembers();
 
-// ✅ Grid/List toggle
+//  Grid/List toggle
 document.getElementById('gridView').addEventListener('click', () => {
   const container = document.getElementById('members');
   container.classList.add('grid');

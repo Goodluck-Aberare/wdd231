@@ -12,7 +12,7 @@ body {
   color: #222;
 }
 
-/* Header and navigation */
+/* Header */
 header {
   background: #222;
   color: white;
@@ -73,22 +73,26 @@ section {
   border-radius: 4px;
 }
 
-/* Directory layout (shared base styles) */
-.directory-layout {
-  display: flex;
-  flex-direction: column;
-}
-
-.business-card {
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: white;
   text-align: center;
-  margin: 10px 0;
+  padding: 60px 20px;
 }
 
-.business-card img {
-  width: 100%;
-  max-width: 150px;
-  display: block;
-  margin: auto;
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background: #ff6600;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 /* Footer */

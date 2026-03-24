@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | True Light Analytics</title>
-  <meta name="description" content="Welcome to True Light Analytics. Connecting businesses and people with data-driven insights.">
+  <title>Chamber | True Light Analytics</title>
+  <meta name="description" content="True Light Analytics Chamber of Commerce. Connecting businesses and people with data-driven insights.">
   <meta name="author" content="Goodluck Aberare">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
@@ -12,7 +12,12 @@
 </head>
 <body>
   <header>
-    <nav>
+    <div class="logo-name">
+      <img src="images/logo.jpeg" alt="True Light Analytics Logo">
+      <h1>True Light Analytics</h1>
+    </div>
+    <button id="menuBtn">☰</button>
+    <nav id="navMenu">
       <a href="index.html">Home</a>
       <a href="discover.html">Discover</a>
       <a href="directory.html">Directory</a>
@@ -21,14 +26,14 @@
   </header>
 
   <main>
-    <section class="hero">
-      <h1>Welcome to True Light Analytics</h1>
-      <button>Keynote Tickets</button>
+    <section class="hero" style="background-image:url('images/hero.jpg');">
+      <h1>Welcome to the Chamber</h1>
+      <button>Join Us Today</button>
     </section>
 
     <section class="community">
       <h2>Community Information</h2>
-      <p>Connecting businesses and people with True Light Analytics.</p>
+      <p>Connecting businesses and people with True Light Analytics Chamber of Commerce.</p>
     </section>
 
     <section class="weather">
@@ -43,7 +48,12 @@
   </main>
 
   <footer>
-    <p>&copy; 20xx True Light Analytics</p>
+    <div class="social">
+      <a href="#"><img src="images/github.jpg" alt="GitHub"></a>
+      <a href="#"><img src="images/x.jpg" alt="x-icon"></a>
+      <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+    </div>
+    <p>&copy; 2026 True Light Analytics</p>
   </footer>
 
   <script src="scripts/main.js" defer></script>
