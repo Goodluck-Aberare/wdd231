@@ -5,69 +5,72 @@
       "address": "12 Market Street, Lagos",
       "phone": "+234 801 234 5678",
       "website": "https://dataleum.com",
-      "membership": "Gold"
+      "membership": "Gold",
+      "image": "images/data_leum.png"
     },
     {
-      "name": "Data tech",
+      "name": "Data Tech",
       "address": "45 Innovation Drive, Lagos",
       "phone": "+234 802 345 6789",
       "website": "https://datatech.com",
-      "membership": "Silver"
+      "membership": "Silver",
+      "image": "images/datatech.jfif"
     },
     {
       "name": "Tech School",
       "address": "78 Country Road, Lagos",
       "phone": "+234 803 456 7890",
       "website": "https://techschool.com",
-      "membership": "Bronze"
+      "membership": "Bronze",
+      "image": "images/tech_school.png"
     },
     {
       "name": "Mustab Analytics",
       "address": "101 Wellness Avenue, Lagos",
       "phone": "+234 804 567 8901",
       "website": "https://mustabanalytics.com",
-      "membership": "Gold"
+      "membership": "Gold",
+      "image": "images/mustab.jfif"
     },
     {
       "name": "Tech 365",
       "address": "22 Learning Lane, Lagos",
       "phone": "+234 805 678 9012",
       "website": "https://tech365.com",
-      "membership": "Silver"
-    }
-    {
-      "name": "Tech 365",
-      "address": "22 Learning Lane, Lagos",
-      "phone": "+234 805 678 9012",
-      "website": "https://tech365.com",
-      "membership": "Silver"
+      "membership": "Silver",
+      "image": "images/tech_365.png"
     },
     {
       "name": "Lagos Data",
       "address": "55 Data Street, Lagos",
       "phone": "+234 806 789 0123",
       "website": "https://lagosdata.com",
-      "membership": "Bronze"
-    }
+      "membership": "Bronze",
+      "image": "images/lagosdata.png"
+    },
     {
       "name": "Abuja Data",
       "address": "55 Data Street, Abuja",
       "phone": "+234 806 789 0123",
       "website": "https://abujadata.com",
-      "membership": "Bronze"
-    }
+      "membership": "Bronze",
+      "image": "images/abujadata.png"
+    },
     {
       "name": "Stata",
       "address": "55 Data Street, Abuja",
       "phone": "+234 806 789 0123",
       "website": "https://stata.com",
-      "membership": "Bronze"
-    }{
+      "membership": "Silver",
+      "image": "images/stata.jfif"
+    },
+    {
       "name": "Data Lab",
       "address": "55 Data Street, Abuja",
       "phone": "+234 806 789 0123",
       "website": "https://datalab.com",
-      "membership": "Bronze"
+      "membership": "Gold",
+      "image": "images/datalab.png"
     }
   ]
 }
