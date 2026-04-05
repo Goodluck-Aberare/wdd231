@@ -17,13 +17,17 @@
 
   <meta property="og:title" content="Join True Light Analytics Chamber">
   <meta property="og:description" content="Become part of True Light Analytics Chamber. Choose your membership level and grow with us.">
-  <meta property="og:url" content="https://www.truelightanalytics.com/join.html">
-  <meta property="og:image" content="images/chamber_hero.jpg"> </head>
+  <meta property="og:url" content="https://yourusername.github.io/your-repo/join.html">
+  <meta property="og:image" content="https://yourusername.github.io/your-repo/images/chamber_hero.jpg"> 
+
+  <script src="scripts/join.js" defer></script>
+</head>
 <body>
   <header>
     <div class="logo-name">
       <img src="images/logo.jpeg" alt="True Light Analytics Logo">
-      <p class="h1-style">True Light Analytics</p> </div>
+      <p class="h1-style">True Light Analytics</p> 
+    </div>
     <button id="menuBtn">☰</button>
     <nav id="navMenu">
       <a href="index.html">Home</a>
@@ -39,32 +43,32 @@
       <p>Become part of our chamber and connect with businesses, insights, and opportunities.</p>
     </section>
 
-    <section class="hero" style="background-image:url('images/thankyou.jfif');">
+    <section class="form-container">
       <form id="joinForm" method="get" action="thankyou.html">
         <label>First Name:
-          <input type="text" name="fname" required autocomplete="given-name">
+          <input type="text" name="fname" required autocomplete="given-name" title="Please enter your first name.">
         </label>
         <label>Last Name:
-          <input type="text" name="lname" required autocomplete="family-name">
+          <input type="text" name="lname" required autocomplete="family-name" title="Please enter your last name.">
         </label>
         <label>Organization Title:
-          <input type="text" name="title" autocomplete="organization-title">
+          <input type="text" name="title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" title="Title must be at least 7 characters and contain only letters, spaces, or hyphens.">
         </label>
         <label>Organization Name:
-          <input type="text" name="orgname" required autocomplete="organization">
+          <input type="text" name="orgname" required autocomplete="organization" title="Please enter your organization name.">
         </label>
         <label>Email:
-          <input type="email" name="email" required placeholder="example@gmail.com" autocomplete="email" title="Please enter a valid email address">
+          <input type="email" name="email" required placeholder="example@gmail.com" autocomplete="email" title="Please enter a valid email address.">
         </label>
         <label>Mobile Phone:
-          <input type="tel" name="phone" required autocomplete="tel" title="A valid phone number is required">
+          <input type="tel" name="phone" required autocomplete="tel" title="A valid phone number is required.">
         </label>
         <label>Website:
-          <input type="url" name="url">
+          <input type="url" name="url" title="Enter your organization's website URL.">
         </label>
         
         <label>Organization Description:
-          <textarea name="description" rows="4"></textarea>
+          <textarea name="description" rows="4" title="Briefly describe your organization."></textarea>
         </label>
 
         <fieldset>
@@ -76,7 +80,8 @@
         </fieldset>
 
         <input type="hidden" id="timestamp" name="timestamp">
-        <button type="submit">Join the Chamber</button> </form>
+        <button type="submit">Join the Chamber</button>
+      </form>
     </section>
   </main>
 
@@ -88,6 +93,5 @@
     </div>
     <p>&copy; 2026 True Light Analytics</p>
   </footer>
-
-  <script src="scripts/join.js"></script> </body>
+</body>
 </html>

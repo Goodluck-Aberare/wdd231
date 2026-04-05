@@ -1,28 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("joinForm");
+    const form = document.getElementById("joinForm");
+    const timestampField = document.getElementById("timestamp");
 
-  form.addEventListener("submit", (event) => {
-    event.preventDefault(); // Prevent page reload
-
-    const formData = new FormData(form);
-    const member = {
-      name: formData.get("name"),
-      business: formData.get("business"),
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      url: formData.get("url"),
-      level: formData.get("level")
-    };
-
-    if (!member.name || !member.business || !member.email) {
-      alert("Please fill out all required fields (Name, Business, Email).");
-      return;
+    // Set the hidden timestamp field to current date/time
+    if (timestampField) {
+        timestampField.value = new Date().toISOString();
     }
 
-    alert(`Thank you, ${member.name}! Your application for the ${member.level} membership has been submitted.`);
+    form.addEventListener("submit", (event) => {
+        // Only prevent default if you want to stop the form from going to thankyou.html
+        // For your assignment, you usually want it to proceed, so consider removing event.preventDefault()
+        
+        const formData = new FormData(form);
+        const member = {
+            fname: formData.get("fname"),
+            lname: formData.get("lname"),
+            orgname: formData.get("orgname"),
+            email: formData.get("email"),
+            level: formData.get("level"),
+            timestamp: formData.get("timestamp")
+        };
 
-    console.log("New Member Application:", member);
-
-    form.reset();
-  });
+        console.log("New Member Application:", member);
+        // The form will now proceed to thankyou.html because method="get" and action="thankyou.html" are set
+    });
 });

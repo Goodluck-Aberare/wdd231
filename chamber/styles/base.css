@@ -155,3 +155,10 @@ footer p {
   font-size: 0.9rem;
   color: #ccc;
 }
+
+.form-container {
+    background-image: url('../images/thankyou.jfif');
+    background-size: cover;
+    background-position: center;
+    /* Add padding or other styles as needed */
+}
