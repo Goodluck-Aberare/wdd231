@@ -12,25 +12,32 @@ body {
   color: #222;
 }
 
-/* Header */
+/* Header and navigation */
 header {
   background: #222;
   color: white;
-  padding: 10px 20px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Updated logo and name styling */
 .logo-name {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px; /* Increased gap for better spacing */
 }
 
 .logo-name img {
-  width: 40px;
+  width: 50px; /* Slightly larger for visibility */
   height: auto;
+  border-radius: 4px;
+}
+
+.logo-name span {
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 #menuBtn {
@@ -42,7 +49,7 @@ header {
 }
 
 nav {
-  display: none;
+  display: none; /* hidden by default on mobile */
   flex-direction: column;
   background: #333;
 }
@@ -67,33 +74,54 @@ main {
 }
 
 section {
+  margin-bottom: 1.5rem;
+  background: #fff; /* Changed to white for better contrast against #f9f9f9 */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Discovery Section Specifics */
+h1 {
   margin-bottom: 1rem;
-  background: #eee;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-.hero {
-  background-image: url("images/chamber_hero.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
   text-align: center;
-  padding: 60px 20px;
 }
 
-.hero h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+h2 {
+  border-bottom: 2px solid #222;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
 }
 
-.hero button {
-  padding: 10px 20px;
-  background: #ff6600;
-  border: none;
-  color: white;
-  cursor: pointer;
+/* Gallery styling */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
   border-radius: 4px;
+}
+
+/* Directory layout (shared base styles) */
+.directory-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.business-card {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.business-card img {
+  width: 100%;
+  max-width: 150px;
+  display: block;
+  margin: auto;
 }
 
 /* Footer */
@@ -101,22 +129,29 @@ footer {
   background: #222;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 20px 10px; /* Increased padding */
 }
 
+/* Updated Social Media Styles */
 .social {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 10px;
+  gap: 20px;
+  margin-bottom: 15px;
 }
 
 .social a img {
-  width: 16px;
-  height: 16px;
+  width: 24px; /* Increased from 16px for better touch targets */
+  height: 24px;
+  filter: invert(1); /* Makes dark icons white for the dark footer */
   transition: transform 0.3s ease;
 }
 
 .social a img:hover {
   transform: scale(1.2);
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #ccc;
 }

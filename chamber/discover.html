@@ -3,21 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discover | True Light Analytics</title>
-  <meta name="description" content="Learn about the history, demographics, and current events of True Light Analytics.">
+  
+  <title>Discover | True Light Analytics Chamber of Commerce</title>
+  
+  <meta name="description" content="Explore the history, demographics, and innovative data-driven events of the True Light Analytics Chamber of Commerce.">
   <meta name="author" content="Goodluck Aberare">
+
+  <meta property="og:title" content="Discover True Light Analytics Chamber of Commerce">
+  <meta property="og:description" content="Learn about our mission in data science, environmental monitoring, and our upcoming global AI summit.">
+  <meta property="og:image" content="https://goodluck-aberare.github.io/wdd231/chamber/images/chamber_hero.jpg">
+  <meta property="og:url" content="https://goodluck-aberare.github.io/wdd231/chamber/discover.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <script src="scripts/discover.js" defer></script>
 </head>
 <body>
   <header>
     <div class="logo-name">
-      <img src="images/logo.jpeg" alt="True Light Analytics Logo">
+      <img src="images/logo.jpeg" alt="True Light Analytics Official Logo">
       <span>Goodluck Aberare</span>
     </div>
 
-    <nav>
+    <button id="menuBtn">☰</button>
+
+    <nav id="navMenu">
       <a href="index.html">Home</a>
       <a href="discover.html">Discover</a>
       <a href="directory.html">Directory</a>
@@ -39,56 +57,56 @@
     </section>
 
     <section>
-  <h2>Current Events</h2>
-  
-  <article class="event-item">
-    <h3>Global Summit on Data Ethics and AI Governance</h3>
-    <p><strong>Date:</strong> August 15-17, 2026 | <strong>Location:</strong> Hybrid (Lagos & Virtual)</p>
-    <p>True Light Analytics is proud to host this year’s summit focusing on the responsible implementation of AI in developing economies. We will be joined by industry leaders to discuss transparency in machine learning models and the protection of user data privacy.</p>
-  </article>
+      <h2>Current Events</h2>
+      <article class="event-item">
+        <h3>Global Summit on Data Ethics and AI Governance</h3>
+        <p><strong>Date:</strong> August 15-17, 2026 | <strong>Location:</strong> Hybrid (Lagos & Virtual)</p>
+        <p>A summit focusing on responsible AI implementation in developing economies, featuring industry leaders discussing data privacy.</p>
+      </article>
 
-  <article class="event-item">
-    <h3>Sustainable Forestry Workshop</h3>
-    <p><strong>Status:</strong> Ongoing Collaboration</p>
-    <p>In partnership with regional environmental agencies, our team is currently deploying remote sensing technology to monitor reforestation efforts. This project utilizes predictive analytics to identify areas at risk of illegal logging before it occurs.</p>
-  </article>
+      <article class="event-item">
+        <h3>Sustainable Forestry Workshop</h3>
+        <p><strong>Status:</strong> Ongoing Collaboration</p>
+        <p>Deploying remote sensing technology to monitor reforestation efforts and identify risks of illegal logging.</p>
+      </article>
 
-  <article class="event-item">
-    <h3>Tech-In-Data Webinar Series</h3>
-    <p><strong>Next Session:</strong> June 10, 2026</p>
-    <p>Join our lead developers for a deep dive into "Responsive Data Dashboards." This webinar is designed for junior developers and students looking to bridge the gap between frontend design and complex backend data interpretation.</p>
-  </article>
+      <article class="event-item">
+        <h3>Tech-In-Data Webinar Series</h3>
+        <p><strong>Next Session:</strong> June 10, 2026</p>
+        <p>Lead developers dive into "Responsive Data Dashboards" for students and junior developers.</p>
+      </article>
 
-  <article class="event-item">
-    <h3>Annual Innovation Hackathon</h3>
-    <p><strong>Registration Open:</strong> October 2026</p>
-    <p>We are looking for the next generation of problem solvers. Participants will be challenged to build a web-based solution that uses open-source data to solve a local logistics or haulage challenge.</p>
-  </article>
-</section>
+      <article class="event-item">
+        <h3>Annual Innovation Hackathon</h3>
+        <p><strong>Registration Open:</strong> October 2026</p>
+        <p>A challenge for problem solvers to build web solutions for local logistics and haulage using open-source data.</p>
+      </article>
+    </section>
 
     <section>
       <h2>Image Montage</h2>
       <div class="gallery">
-        <img src="images/site1.jfif" alt="Site 1">
-        <img src="images/site2.jfif" alt="Site 2">
+        <img src="images/site1.jfif" alt="Real-time data analytics dashboard showing complex environmental growth patterns.">
+        <img src="images/site2.jfif" alt="Collaborative tech workspace where analysts review artificial intelligence models.">
       </div>
     </section>
   </main>
 
   <footer>
     <div class="social">
-      <a href="https://github.com/yourusername" target="_blank">
-        <img src="images/github.jpg" alt="GitHub">
+      <a href="https://github.com/goodluck-aberare" target="_blank">
+        <img src="images/github.jpg" alt="Connect with Goodluck Aberare on GitHub">
       </a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank">
-        <img src="images/linkedin.jpg" alt="LinkedIn">
+      <a href="https://linkedin.com/in/goodluck-aberare" target="_blank">
+        <img src="images/linkedin.jpg" alt="Visit Goodluck Aberare's professional LinkedIn profile">
       </a>
-      <a href="https://x.com/yourusername" target="_blank">
-        <img src="images/x_twitter.jpg" alt="X (Twitter)">
+      <a href="https://x.com/goodluck" target="_blank">
+        <img src="images/x_twitter.jpg" alt="Follow True Light Analytics updates on X Twitter">
       </a>
     </div>
 
     <p>&copy; 2026 Goodluck Aberare | Nigeria</p>
+    <p id="lastModified"></p>
   </footer>
 </body>
 </html>
