@@ -50,7 +50,7 @@ header {
 nav {
   display: none; /* hidden by default on mobile */
   flex-direction: column;
-  background: #333;
+  background: #e9dcdc;
 }
 
 nav a {
