@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Discover | True Light Analytics Chamber of Commerce</title>
+  <title>Discover Lagos | True Light Analytics Chamber of Commerce</title>
   
-  <meta name="description" content="Explore the history, demographics, and innovative data-driven events of the True Light Analytics Chamber of Commerce.">
+  <meta name="description" content="Explore the landmarks, culture, and tech hubs of Lagos. Learn about our local area with facts, demographics, and featured attractions.">
   <meta name="author" content="Goodluck Aberare">
 
-  <meta property="og:title" content="Discover True Light Analytics Chamber of Commerce">
-  <meta property="og:description" content="Learn about our mission in data science, environmental monitoring, and our upcoming global AI summit.">
+  <meta property="og:title" content="Discover True Light Analytics - Lagos">
+  <meta property="og:description" content="Explore key landmarks and demographics of the Lagos area via the True Light Analytics Chamber.">
   <meta property="og:image" content="https://goodluck-aberare.github.io/wdd231/chamber/images/chamber_hero.jpg">
   <meta property="og:url" content="https://goodluck-aberare.github.io/wdd231/chamber/discover.html">
   <meta property="og:type" content="website">
@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
 
-  <script src="scripts/discover.js" defer></script>
+  <script src="scripts/discover.js" type="module" defer></script>
 </head>
 <body>
   <header>
@@ -37,57 +37,44 @@
 
     <nav id="navMenu">
       <a href="index.html">Home</a>
-      <a href="discover.html">Discover</a>
+      <a href="discover.html" class="active">Discover</a>
       <a href="directory.html">Directory</a>
       <a href="join.html">Join</a>
     </nav>
   </header>
 
   <main>
-    <h1>Discover True Light Analytics</h1>
+    <h1>Discover Our Area</h1>
 
-    <section>
-      <h2>History</h2>
-      <p>True Light Analytics is a technology-driven organization focused on using advanced data analytics, artificial intelligence (AI), and machine learning to analyze complex information and generate meaningful insights...</p>
+    <div id="visit-message" class="visit-message">
+      </div>
+
+    <section class="area-info">
+      <div class="info-card">
+        <h2>History & Culture</h2>
+        <p>Lagos, a major African financial center, began as a fishing and farming settlement. Today, it is a bustling metropolis known for its vibrant music scene, rich Yoruba heritage, and as the heartbeat of Nigeria's economy.</p>
+      </div>
+
+      <div class="info-card">
+        <h2>Demographics</h2>
+        <p>As the most populous city in Nigeria and Africa, Lagos is home to over 20 million people. It is a melting pot of cultures, featuring a young, tech-savvy population and a growing middle class that drives innovation and entrepreneurship.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>Demographics</h2>
-      <p>True Light Analytics is composed of a diverse team of professionals specializing in data science, artificial intelligence, and machine learning...</p>
-    </section>
+    <section class="discover-grid">
+      </section>
 
-    <section>
-      <h2>Current Events</h2>
-      <article class="event-item">
-        <h3>Global Summit on Data Ethics and AI Governance</h3>
-        <p><strong>Date:</strong> August 15-17, 2026 | <strong>Location:</strong> Hybrid (Lagos & Virtual)</p>
-        <p>A summit focusing on responsible AI implementation in developing economies, featuring industry leaders discussing data privacy.</p>
-      </article>
-
-      <article class="event-item">
-        <h3>Sustainable Forestry Workshop</h3>
-        <p><strong>Status:</strong> Ongoing Collaboration</p>
-        <p>Deploying remote sensing technology to monitor reforestation efforts and identify risks of illegal logging.</p>
-      </article>
-
-      <article class="event-item">
-        <h3>Tech-In-Data Webinar Series</h3>
-        <p><strong>Next Session:</strong> June 10, 2026</p>
-        <p>Lead developers dive into "Responsive Data Dashboards" for students and junior developers.</p>
-      </article>
-
-      <article class="event-item">
-        <h3>Annual Innovation Hackathon</h3>
-        <p><strong>Registration Open:</strong> October 2026</p>
-        <p>A challenge for problem solvers to build web solutions for local logistics and haulage using open-source data.</p>
-      </article>
-    </section>
-
-    <section>
-      <h2>Image Montage</h2>
+    <section class="image-montage">
+      <h2>Local Life in Photos</h2>
       <div class="gallery">
-        <img src="images/site1.jfif" alt="Real-time data analytics dashboard showing complex environmental growth patterns.">
-        <img src="images/site2.jfif" alt="Collaborative tech workspace where analysts review artificial intelligence models.">
+        <figure>
+          <img src="images/site1.jfif" alt="Real-time data analytics dashboard showing complex environmental growth patterns.">
+          <figcaption>Data Analytics Hub</figcaption>
+        </figure>
+        <figure>
+          <img src="images/site2.jfif" alt="Collaborative tech workspace where analysts review artificial intelligence models.">
+          <figcaption>Collaborative Innovation</figcaption>
+        </figure>
       </div>
     </section>
   </main>
@@ -105,7 +92,7 @@
       </a>
     </div>
 
-    <p>&copy; 2026 Goodluck Aberare | Nigeria</p>
+    <p>&copy; 2026 Goodluck Aberare | Lagos, Nigeria</p>
     <p id="lastModified"></p>
   </footer>
 </body>
