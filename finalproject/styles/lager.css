@@ -11,6 +11,7 @@
         position: static;
         width: auto;
         padding: 0;
+        background: transparent;
     }
 
     .nav-links li a {
@@ -63,6 +64,16 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
+    }
+    .service-preview-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .form-item-full {
