@@ -1,0 +1,89 @@
+/* larger.css 
+   Targeting screens wider than 640px (Tablets and Desktops)
+*/
+
+@media (min-width: 640px) {
+    /* --- Navigation Update --- */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 5%;
+    }
+
+    #menu-button {
+        display: none; /* Hide hamburger icon on desktop */
+    }
+
+    .nav-links {
+        display: flex !important; /* Force display flex for horizontal layout */
+        flex-direction: row;
+        width: auto;
+        gap: 20px;
+    }
+
+    .nav-links li {
+        border: none;
+    }
+
+    .nav-links li a:hover {
+        color: var(--secondary-color);
+        background: transparent;
+        text-decoration: underline;
+    }
+
+    /* --- Hero Section --- */
+    .hero {
+        padding: 80px 20px;
+        text-align: left;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        max-width: 600px;
+    }
+
+    /* --- Service Grid (The 15 items) --- */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    /* --- Desktop Specific Refinement (Laptops/Monitors) --- */
+    @media (min-width: 1024px) {
+        .grid-container {
+            grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }
+
+    /* --- Form Layout (Contact Page) --- */
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .form-item-full {
+        grid-column: 1 / span 2; /* Make specific items (like comments) span full width */
+    }
+
+    /* --- Footer --- */
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+    }
+}

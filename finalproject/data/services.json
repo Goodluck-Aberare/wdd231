@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "AGO (Diesel) Bulk",
+    "category": "Petroleum",
+    "description": "High-quality Automotive Gas Oil for industrial fleets.",
+    "price": "Market Rate",
+    "image": "diesel.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Heavy Duty Brake Pads",
+    "category": "Maintenance",
+    "description": "Premium ceramic pads for Mack and Volvo trucks.",
+    "price": "$240",
+    "image": "brakes.jpg"
+  },
+  {
+    "id": 3,
+    "name": "PMS (Petrol) Supply",
+    "category": "Petroleum",
+    "description": "Premium Motor Spirit delivered for retail and corporate clients.",
+    "price": "Market Rate",
+    "image": "petrol.jpg"
+  },
+  {
+    "id": 4,
+    "name": "DPK (Kerosene)",
+    "category": "Petroleum",
+    "description": "Domestic and industrial kerosene for households and factories.",
+    "price": "Market Rate",
+    "image": "kerosene.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Lubricants & Grease",
+    "category": "Maintenance",
+    "description": "Industrial-grade lubricants for engines and heavy machinery.",
+    "price": "Market Rate",
+    "image": "lubricants.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Truck Tires (Heavy Duty)",
+    "category": "Maintenance",
+    "description": "Durable tires designed for long-haul trucks and tankers.",
+    "price": "$350",
+    "image": "truck_tires.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Gas Cylinder Refilling",
+    "category": "Gas",
+    "description": "Safe and reliable LPG refilling for homes and businesses.",
+    "price": "Market Rate",
+    "image": "lpg.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Fuel Dispenser Pumps",
+    "category": "Equipment",
+    "description": "Accurate and reliable pumps for fuel stations.",
+    "price": "$900",
+    "image": "fuel_pump.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Tank Farm Storage",
+    "category": "Infrastructure",
+    "description": "Bulk storage solutions for petroleum products in Lagos.",
+    "price": "Contract Basis",
+    "image": "tankfarm.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Fleet Maintenance",
+    "category": "Maintenance",
+    "description": "Comprehensive servicing for trucks and industrial vehicles.",
+    "price": "From $150",
+    "image": "fleet.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Oil Spill Cleanup",
+    "category": "Environmental",
+    "description": "Rapid response and remediation for oil spill incidents.",
+    "price": "Contract Basis",
+    "image": "cleanup.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Industrial Safety Gear",
+    "category": "Safety",
+    "description": "Helmets, gloves, and protective wear for oilfield workers.",
+    "price": "Varies",
+    "image": "safety.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Calibration Services",
+    "category": "Technical",
+    "description": "Precision calibration of pumps, meters, and gauges.",
+    "price": "From $100",
+    "image": "calibration.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Fuel Truck Leasing",
+    "category": "Logistics",
+    "description": "Flexible leasing options for fuel distribution trucks.",
+    "price": "Contract Basis",
+    "image": "truck.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Power Generator Supply",
+    "category": "Energy",
+    "description": "Diesel and gas-powered generators for industrial use.",
+    "price": "Market Rate",
+    "image": "generator.jpg"
+  }
+]

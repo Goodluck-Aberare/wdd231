@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | True Light Global Resource</title>
+    <meta name="description" content="Contact True Light for procurement and maintenance inquiries.">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="brand"><span>True Light</span></div>
+            <button id="menu-button">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Request a Service Quote</h2>
+        <form action="thank-you.html" method="get" class="contact-form">
+            <label>Name: <input type="text" name="fname" required></label>
+            <label>Email: <input type="email" name="email" required></label>
+            <label>Service Type:
+                <select name="service">
+                    <option value="petroleum">Petroleum Procurement</option>
+                    <option value="logistics">Logistics</option>
+                    <option value="maintenance">Truck Maintenance</option>
+                </select>
+            </label>
+            <label class="form-item-full">Comments: 
+                <textarea name="comments" rows="4"></textarea>
+            </label>
+            <input type="submit" value="Send Request" class="cta-button">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 True Light Global Resource</p>
+    </footer>
+
+    <script src="scripts/main.js" type="module"></script>
+</body>
+</html>
