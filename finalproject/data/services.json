@@ -5,7 +5,7 @@
     "category": "Petroleum",
     "description": "High-quality Automotive Gas Oil for industrial fleets.",
     "price": "Market Rate",
-    "image": "diesel.jpg"
+    "image": "diesel.jpeg"
   },
   {
     "id": 2,
@@ -45,7 +45,7 @@
     "category": "Maintenance",
     "description": "Durable tires designed for long-haul trucks and tankers.",
     "price": "$350",
-    "image": "truck_tires.jpg"
+    "image": "truck_tires.png"
   },
   {
     "id": 7,
@@ -61,7 +61,7 @@
     "category": "Equipment",
     "description": "Accurate and reliable pumps for fuel stations.",
     "price": "$900",
-    "image": "fuel_pump.jpg"
+    "image": "fuel_pump.png"
   },
   {
     "id": 9,
