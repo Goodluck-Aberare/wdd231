@@ -1,89 +1,146 @@
-/* larger.css 
-   Targeting screens wider than 640px (Tablets and Desktops)
-*/
+/* --- DESKTOP ENHANCEMENTS --- */
+/* Targeting screens wider than 640px (Tablets and Desktops) */
 
 @media (min-width: 640px) {
-    /* --- Navigation Update --- */
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 5%;
-    }
-
+    /* Navigation: Hide burger icon and show links horizontally */
     #menu-button {
-        display: none; /* Hide hamburger icon on desktop */
+        display: none;
     }
 
     .nav-links {
-        display: flex !important; /* Force display flex for horizontal layout */
+        display: flex !important;
         flex-direction: row;
         width: auto;
-        gap: 20px;
+        background: transparent;
+        gap: 10px;
     }
 
-    .nav-links li {
-        border: none;
+    .nav-links li a {
+        padding: 10px 15px;
+        border-radius: 4px;
     }
 
     .nav-links li a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
         color: var(--secondary-color);
-        background: transparent;
-        text-decoration: underline;
     }
 
-    /* --- Hero Section --- */
+    /* Hero Section: Professional Scaling */
     .hero {
-        padding: 80px 20px;
-        text-align: left;
+        padding: 120px 20px;
+        background-image: linear-gradient(rgba(0,51,102,0.8), rgba(0,51,102,0.8)), url('../images/hero.jpg');
+        background-size: cover;
         background-position: center;
     }
 
     .hero h1 {
-        font-size: 3rem;
-        max-width: 600px;
+        font-size: 3.5rem;
+        max-width: 800px;
+        margin: 0 auto 20px auto;
     }
 
-    /* --- Service Grid (The 15 items) --- */
-    .grid-container {
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    /* Home Page: Service Preview (3 items side-by-side) */
+    .service-preview-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        grid-template-columns: repeat(3, 1fr);
         gap: 30px;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 40px 20px;
+        margin-top: 30px;
     }
 
-    /* --- Desktop Specific Refinement (Laptops/Monitors) --- */
-    @media (min-width: 1024px) {
-        .grid-container {
-            grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
-        }
-        
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    .preview-item {
+        background: var(--accent-color);
+        padding: 30px;
+        border-radius: 8px;
+        border-top: 5px solid var(--secondary-color);
+        transition: transform 0.3s ease;
     }
 
-    /* --- Form Layout (Contact Page) --- */
-    form {
+    .preview-item:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Home Page: Achievement Stats (4 items side-by-side) */
+    .stats-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        list-style: none;
+        text-align: center;
+    }
+
+    .stats-list li {
+        background: var(--primary-color);
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .stats-list li strong {
+        display: block;
+        font-size: 1.8rem;
+        color: var(--secondary-color);
+    }
+
+    /* Services Page: The 15-Item Grid */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        gap: 30px;
+    }
+
+    /* Contact Page: Form Grid */
+    .contact-form {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        max-width: 800px;
-        margin: 0 auto;
+        gap: 25px;
+        background: var(--accent-color);
+        padding: 40px;
+        border-radius: 8px;
     }
 
     .form-item-full {
-        grid-column: 1 / span 2; /* Make specific items (like comments) span full width */
+        grid-column: 1 / span 2;
     }
 
-    /* --- Footer --- */
-    footer {
+    .contact-form label {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        text-align: left;
+        flex-direction: column;
+        font-weight: bold;
+    }
+
+    .contact-form input, 
+    .contact-form select, 
+    .contact-form textarea {
+        padding: 12px;
+        margin-top: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    /* Policies Section */
+    .policy-container {
+        display: flex;
+        gap: 40px;
+    }
+
+    .policy-container article {
+        flex: 1;
+    }
+}
+
+/* --- LARGE DESKTOP ENHANCEMENTS --- */
+@media (min-width: 1024px) {
+    /* 3 Columns for the 15 items on large monitors */
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header, main, footer {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
