@@ -1,21 +1,22 @@
-/* --- DESKTOP STYLES --- */
+/* --- DESKTOP STYLES (768px and up) --- */
 @media (min-width: 768px) {
-    /* Navigation: Horizontal Menu */
-    #menu-button {
-        display: none;
-    }
+    
+    /* Navigation */
+    #menu-button { display: none; }
 
     .nav-links {
         display: flex !important;
         flex-direction: row;
         position: static;
         width: auto;
-        padding: 0;
         background: transparent;
+        border: none;
     }
 
     .nav-links li a {
-        padding: 5px 15px;
+        padding: 0.5rem 1.2rem;
+        border: none;
+        transition: var(--transition);
     }
 
     .nav-links li a:hover {
@@ -24,59 +25,60 @@
 
     /* Hero */
     .hero {
-        padding: 100px 20px;
+        padding: 140px 10%;
     }
 
     .hero h1 {
-        font-size: 3rem;
+        font-size: 4rem;
+        max-width: 800px;
     }
 
-    /* Core Solutions Grid (Home Page) */
-    .service-preview-grid {
+    /* Grids */
+    .service-preview-grid, .grid-container {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* Achievements Stats */
+    .preview-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Achievements Horizontal Layout */
     .stats-list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
-        list-style: none;
     }
 
-    /* Services Page Grid (The 15 items) */
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr);
+    .stats-list li {
+        text-align: center;
+        border-left: none;
+        border-top: 5px solid var(--primary-color);
     }
 
-    /* Policies Container */
+    /* Policies Flexbox */
     .policy-container {
         display: flex;
-        gap: 30px;
+        gap: 40px;
     }
 
     .policy-container article {
         flex: 1;
+        background: var(--accent-bg);
+        padding: 30px;
+        border-radius: 8px;
     }
 
-    /* Contact Form Grid */
-    .contact-form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-    .service-preview-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+    /* Career/Contact Spacing */
+    .careers, .quick-contact {
+        text-align: center;
+        max-width: 800px;
     }
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .form-item-full {
-        grid-column: 1 / span 2;
+    .email-text {
+        font-family: monospace;
+        background: #eee;
+        padding: 4px 8px;
+        border-radius: 4px;
     }
 }
