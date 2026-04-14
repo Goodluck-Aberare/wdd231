@@ -1,84 +1,86 @@
-/* --- DESKTOP STYLES (768px and up) --- */
 @media (min-width: 768px) {
+    /* --- Header/Nav --- */
+    #menu-button { 
+        display: none; 
+    }
     
-    /* Navigation */
-    #menu-button { display: none; }
-
     .nav-links {
         display: flex !important;
         flex-direction: row;
         position: static;
         width: auto;
         background: transparent;
-        border: none;
+    }
+    
+    .nav-links li a { 
+        border: none; 
+        padding: 10px 20px; 
     }
 
-    .nav-links li a {
-        padding: 0.5rem 1.2rem;
-        border: none;
-        transition: var(--transition);
+    /* --- Hero --- */
+    .hero { 
+        padding: 120px 20px; 
+    }
+    
+    .hero h1 { 
+        font-size: 3.5rem; 
     }
 
-    .nav-links li a:hover {
-        color: var(--secondary-color);
-    }
-
-    /* Hero */
-    .hero {
-        padding: 140px 10%;
-    }
-
-    .hero h1 {
-        font-size: 4rem;
-        max-width: 800px;
-    }
-
-    /* Grids */
-    .service-preview-grid, .grid-container {
+    /* --- Grids & Images --- */
+    .service-preview-grid {
         grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
     }
 
-    .preview-item:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    /* Increasing the height of the service and policy images */
+    .preview-item img, 
+    .policy-img {
+        height: 300px; /* Increased from 200px for a clearer view */
+        object-fit: cover;
+    }
+    
+    .policy-container { 
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 30px;
     }
 
-    /* Achievements Horizontal Layout */
+    /* --- Achievements --- */
     .stats-list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
-
-    .stats-list li {
-        text-align: center;
-        border-left: none;
-        border-top: 5px solid var(--primary-color);
+    
+    .stats-list li { 
+        text-align: center; 
+        border-left: none; 
+        border-top: 5px solid var(--primary-color); 
     }
 
-    /* Policies Flexbox */
-    .policy-container {
-        display: flex;
+    /* --- Career Layout --- */
+    .career-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
         gap: 40px;
+        text-align: left;
+    }
+    
+    .career-text { 
+        text-align: left; 
+    }
+    
+    /* Ensuring the career image is tall enough to match the text content */
+    .career-image img { 
+        height: 500px; 
+        object-fit: cover;
     }
 
-    .policy-container article {
-        flex: 1;
-        background: var(--accent-bg);
-        padding: 30px;
-        border-radius: 8px;
-    }
-
-    /* Career/Contact Spacing */
-    .careers, .quick-contact {
-        text-align: center;
-        max-width: 800px;
-    }
-
-    .email-text {
-        font-family: monospace;
-        background: #eee;
-        padding: 4px 8px;
-        border-radius: 4px;
+    /* --- Hovers --- */
+    .preview-item:hover, 
+    .policy-card:hover {
+        transform: translateY(-5px);
+        transition: var(--transition);
     }
 }

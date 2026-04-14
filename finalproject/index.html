@@ -10,12 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Segoe+UI&display=swap" rel="stylesheet">
-
-    <meta property="og:title" content="True Light Global Resource: Expert Petroleum and Logistics Services">
-    <meta property="og:description" content="Reliable energy logistics and petroleum supply solutions for industrial and retail needs across Nigeria. Request a quote today.">
-    <meta property="og:image" content="https://goodluck-aberare.github.io/wdd231/finalproject/images/hero.jpg">
-    <meta property="og:url" content="https://goodluck-aberare.github.io/wdd231/finalproject/index.html">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -29,7 +24,7 @@
                 <span>True Light Global Resource</span>
             </div>
             <button id="menu-button" aria-label="Toggle Menu">☰</button>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -49,35 +44,52 @@
         </section>
 
         <section class="home-services">
-    <h2>Our Core Solutions</h2>
-    <div class="service-preview-grid">
-        <div class="preview-item">
-            <img src="images/truck.jpg" alt="Petroleum Procurement" loading="lazy">
-            <h3>Petroleum Procurement</h3>
-            <p>Direct supply of bulk AGO, PMS, and DPK for industrial and retail needs.</p>
-        </div>
-        <div class="preview-item">
-            <img src="images/fleet.jpg" alt="Logistics and Haulage" loading="lazy">
-            <h3>Logistics & Haulage</h3>
-            <p>Safe and timely distribution of energy products across the region.</p>
-        </div>
-        <div class="preview-item">
-            <img src="images/calibration.jpg" alt="Fleet Maintenance" loading="lazy">
-            <h3>Fleet Maintenance</h3>
-            <p>Specialized technical support and spare parts for heavy-duty trucks.</p>
-        </div>
-    </div>
-    <p class="center-link"><a href="services.html" class="cta-secondary">View All 15+ Services &rarr;</a></p>
-</section>
+            <h2>Our Core Solutions</h2>
+            <div class="service-preview-grid">
+                <div class="preview-item">
+                    <img src="images/truck.jpg" alt="Petroleum Procurement" loading="lazy">
+                    <h3>Petroleum Procurement</h3>
+                    <p>We provide reliable and efficient procurement of petroleum products including Automotive Gas Oil (AGO), 
+                      Premium Motor Spirit (PMS), and Dual Purpose Kerosene (DPK). Our supply chain ensures timely delivery, 
+                      competitive pricing, and strict adherence to industry standards. Whether for industrial operations, commercial businesses, or retail distribution, we guarantee consistent 
+                      product quality and dependable logistics to keep your operations running smoothly. Our procurement process is built on strong partnerships with trusted refineries and depots, ensuring 
+                      product availability, price stability, and regulatory compliance at all times. With an efficient logistics network, we deliver bulk and retail quantities safely and on schedule, 
+                      helping businesses maintain uninterrupted operations.</p>
+                </div>
+                <div class="preview-item">
+                    <img src="images/fleet.jpg" alt="Logistics and Haulage" loading="lazy">
+                    <h3>Logistics & Haulage</h3>
+                    <p>Safe and timely distribution of energy products across the region. Our company operates a robust logistics and haulage system designed to ensure the secure and efficient 
+                     transportation of petroleum products to various destinations. We utilize a fleet of well-maintained tanker 
+                     trucks and experienced drivers who are trained to handle hazardous materials with the highest level of care 
+                     and professionalism. We prioritize safety, compliance, and reliability in every stage of our operations, adhering strictly to 
+                     industry regulations and environmental standards. Our logistics team carefully plans delivery routes, monitors 
+                     shipments in real-time, and ensures that all consignments arrive on schedule without compromise. Whether delivering to industrial facilities, commercial outlets, or retail stations, we are committed to 
+                     providing dependable haulage services that support uninterrupted business operations and customer satisfaction.  </p>
+                </div>
+                <div class="preview-item">
+                    <img src="images/calibration.jpg" alt="Fleet Maintenance" loading="lazy">
+                    <h3>Fleet Maintenance</h3>
+                    <p>Specialized technical support and spare parts for heavy-duty trucks. Our fleet maintenance services are designed to ensure the optimal performance, safety, and longevity of all 
+                     heavy-duty vehicles within our operations. We carry out routine inspections and preventive maintenance to 
+                     keep every truck running efficiently and reduce unexpected breakdowns.Our team of skilled technicians uses advanced diagnostic tools and equipment to detect faults early and 
+                     perform timely repairs. We also supply high-quality, genuine spare parts to maintain reliability and enhance 
+                     overall vehicle performance. By prioritizing safety, compliance, and efficiency, we minimize downtime, improve fuel efficiency, and extend 
+                     the lifespan of our fleet, ensuring smooth and uninterrupted logistics operations for our clients.</p>
+                </div>
+            </div>
+            <p class="center-link"><a href="services.html" class="cta-secondary">View All 15+ Services &rarr;</a></p>
+        </section>
+
         <hr>
 
         <section class="achievements">
             <h2>Company Achievements</h2>
             <ul class="stats-list">
-                <li><strong>500,000+</strong> Liters of Fuel Delivered Monthly</li>
+                <li><strong>500,000+</strong> Liters Delivered Monthly</li>
                 <li><strong>98%</strong> On-Time Delivery Rate</li>
-                <li><strong>50+</strong> Corporate Clients in Logistics & Construction</li>
-                <li><strong>Zero</strong> Major Safety Incidents Since Inception</li>
+                <li><strong>50+</strong> Corporate Clients</li>
+                <li><strong>Zero</strong> Major Safety Incidents</li>
             </ul>
         </section>
 
@@ -86,13 +98,28 @@
         <section class="policies">
             <h2>Our Policies & Commitment</h2>
             <div class="policy-container">
-                <article>
-                    <h3>Quality Assurance</h3>
-                    <p>We source all petroleum products from certified depots, ensuring that our AGO and PMS meet national purity standards.</p>
+                <article class="policy-card">
+                    <img src="images/quality.jpg" alt="Quality Testing" loading="lazy" class="policy-img">
+                    <div class="policy-content">
+                        <h3>Quality Assurance</h3>
+                        <p>We source all petroleum products from certified depots, ensuring that our products meet national standards. Our quality assurance process is built on strict sourcing policies and partnerships with trusted, licensed suppliers. 
+                         Every product is carefully selected to guarantee purity, consistency, and compliance with regulatory requirements. We conduct routine quality checks and verification procedures at various stages of procurement and delivery to ensure 
+                         that all petroleum products maintain their integrity from source to final destination. This helps us prevent contamination 
+                         and maintain product reliability. By upholding high quality standards, we provide our clients with confidence in the safety, performance, and efficiency of 
+                         every product supplied, supporting their operations without compromise.</p>
+                    </div>
                 </article>
-                <article>
-                    <h3>Safety First (HSE)</h3>
-                    <p>Our drivers and technicians undergo rigorous safety training to prevent accidents during transport and maintenance operations.</p>
+                <article class="policy-card">
+                    <img src="images/safety.jpg" alt="Safety Training" loading="lazy" class="policy-img">
+                    <div class="policy-content">
+                        <h3>Safety First (HSE)</h3>
+                        <p>Our staff undergo rigorous safety training to prevent accidents during transport and maintenance. We are committed to maintaining the highest standards of Health, Safety, and Environment (HSE) across all our operations. 
+                         Our team is regularly trained on industry best practices, emergency response procedures, and safe handling of petroleum 
+                         products to minimize risks at every stage. We enforce strict safety protocols, including the use of protective equipment, routine safety inspections, and compliance 
+                         with all regulatory guidelines. Our vehicles and equipment are also regularly checked to ensure they meet safety standards 
+                         before deployment. By prioritizing safety in our workplace and operations, we protect our employees, clients, and the environment while ensuring 
+                         smooth, incident-free service delivery at all times.</p>
+                    </div>
                 </article>
             </div>
         </section>
@@ -100,10 +127,21 @@
         <hr>
 
         <section class="careers">
-            <h2>Careers</h2>
-            <p>Want to join our team of logistics experts and technicians? We are always looking for motivated professionals to grow with us.</p>
-            <p><strong>Current Openings:</strong> Heavy Duty Mechanic, Tanker Driver, Operations Coordinator.</p>
-            <p>Send your CV to: <span class="email-text">careers@truelightglobal.com</span></p>
+            <div class="career-layout">
+                <div class="career-text">
+                    <h2>Careers</h2>
+                    <p>Want to join our team of experts? We are always looking for motivated professionals to grow with us. At our company, we value dedication, professionalism, and a strong commitment to excellence. We provide a supportive 
+                     work environment where employees can develop their skills, gain hands-on experience, and build long-term careers in 
+                     the energy and logistics industry. We offer opportunities for continuous learning, safety training, and career advancement across different roles within 
+                     the organization. Whether you are experienced or looking to grow, we welcome individuals who are passionate about 
+                     delivering quality service and contributing to a high-performing team.</p>
+                    <p><strong>Openings:</strong> Mechanic, Driver, Operations Coordinator.</p>
+                    <p>Send CV to: <span class="email-text">careers@truelightglobal.com</span></p>
+                </div>
+                <div class="career-image">
+                    <img src="images/career.webp" alt="True Light Team" loading="lazy">
+                </div>
+            </div>
         </section>
 
         <hr>
@@ -117,7 +155,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 True Light Global Resource | <a href="your_video_link">Project Demonstration Video</a></p>
+        <p>&copy; 2026 True Light Global Resource | <a href="#">Project Video</a></p>
     </footer>
 
     <script src="scripts/main.js" type="module"></script>
