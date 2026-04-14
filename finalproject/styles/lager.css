@@ -1,6 +1,6 @@
-/* larger.css */
+/* larger.css - Clean & Consistent Image Arrangement */
 @media (min-width: 768px) {
-    
+
     /* ==================== HEADER / NAV ==================== */
     #menu-button { 
         display: none; 
@@ -12,125 +12,134 @@
         position: static;
         width: auto;
         background: transparent;
-        gap: 10px;
+        gap: 8px;
     }
     
     .nav-links li a { 
         border: none; 
-        padding: 12px 20px;
-        text-align: center;
+        padding: 12px 22px;
     }
 
     /* ==================== HERO ==================== */
     .hero { 
-        padding: 140px 20px; 
+        padding: 160px 20px; 
     }
     
     .hero h1 { 
-        font-size: 3.8rem; 
+        font-size: 4rem; 
     }
 
-    /* ==================== IMAGE GRIDS - CONSISTENT LAYOUT ==================== */
-    
-    /* Service Preview Grid */
+    /* ==================== CONSISTENT IMAGE GRIDS ==================== */
+
+    /* Main Service Preview Grid (used on both index.html and services.html) */
     .service-preview-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 32px;
     }
-    
+
     .preview-item {
         display: flex;
         flex-direction: column;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
     }
-    
+
     .preview-item img {
         width: 100%;
-        height: 280px;           /* Better default height */
-        object-fit: cover;       /* This is the most important fix */
-        border-radius: 8px;
+        height: 260px;                    /* Consistent height */
+        object-fit: cover;                /* MOST IMPORTANT FIX */
         flex-shrink: 0;
     }
 
-    /* Policy / Gallery Style */
+    .preview-item:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Policy Section (Quality & Safety cards) */
     .policy-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-        gap: 35px;
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+        gap: 40px;
     }
-    
+
+    .policy-card {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+    }
+
     .policy-img {
         width: 100%;
         height: 320px;
         object-fit: cover;
-        border-radius: 8px;
+        flex-shrink: 0;
+    }
+
+    .policy-content {
+        padding: 25px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Career Section */
+    .career-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .career-image img {
+        width: 100%;
+        height: 460px;
+        object-fit: cover;
+        border-radius: 12px;
     }
 
     /* Achievements / Stats */
     .stats-list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 25px;
     }
 
-    /* Career Layout */
-    .career-layout {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        gap: 50px;
-    }
-    
-    .career-image img {
-        width: 100%;
-        height: 420px;
-        object-fit: cover;
-        border-radius: 12px;
+    .stats-list li {
+        background: white;
+        padding: 20px 15px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: var(--shadow);
     }
 
-    /* ==================== CONTACT PAGE ==================== */
-    .contact-details {
-        display: flex;
-        justify-content: space-around;
-        text-align: left;
-        gap: 30px;
-    }
-    
-    .contact-details p {
-        flex: 1;
-        margin: 0;
-    }
-    
-    .map iframe {
-        height: 420px;
-        width: 100%;
-    }
-    
-    .contact-form {
-        width: 65%;
-        max-width: 700px;
+    /* Quick Contact & Other sections */
+    .quick-contact {
+        text-align: center;
     }
 
-    /* Social Links */
-    .social-links {
-        gap: 35px;
+    /* Make all images behave nicely */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
 
     /* ==================== HOVER EFFECTS ==================== */
     .preview-item,
     .policy-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .preview-item:hover,
-    .policy-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+        transition: all 0.35s ease;
     }
 
-    /* Optional: Make all images in content areas consistent */
-    img {
-        max-width: 100%;
-        height: auto;
+    .preview-item:hover,
+    .policy-card:hover {
+        box-shadow: 0 20px 30px rgba(0, 51, 102, 0.12);
     }
 }
