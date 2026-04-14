@@ -1,52 +1,76 @@
 /* larger.css */
 @media (min-width: 768px) {
-    /* Header/Nav */
-    #menu-button { display: none; }
+    
+    /* ==================== HEADER / NAV ==================== */
+    #menu-button { 
+        display: none; 
+    }
+    
     .nav-links {
         display: flex !important;
         flex-direction: row;
         position: static;
         width: auto;
         background: transparent;
-    }
-    .nav-links li a { border: none; padding: 10px 20px; }
-
-    /* Hero */
-    .hero { padding: 120px 20px; }
-    .hero h1 { font-size: 3.5rem; }
-
-    /* Grids & Image Fixes */
-    .service-preview-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-    }
-
-    /* Increase image height for desktop so they aren't small strips */
-    .preview-item img {
-        height: 300px; 
+        gap: 10px;
     }
     
-    .policy-container { 
+    .nav-links li a { 
+        border: none; 
+        padding: 12px 20px;
+        text-align: center;
+    }
+
+    /* ==================== HERO ==================== */
+    .hero { 
+        padding: 140px 20px; 
+    }
+    
+    .hero h1 { 
+        font-size: 3.8rem; 
+    }
+
+    /* ==================== IMAGE GRIDS - CONSISTENT LAYOUT ==================== */
+    
+    /* Service Preview Grid */
+    .service-preview-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 30px;
     }
-
-    .policy-img {
-        height: 350px; /* Larger images for the policy section */
+    
+    .preview-item {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .preview-item img {
+        width: 100%;
+        height: 280px;           /* Better default height */
+        object-fit: cover;       /* This is the most important fix */
+        border-radius: 8px;
+        flex-shrink: 0;
     }
 
-    /* Achievements */
+    /* Policy / Gallery Style */
+    .policy-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        gap: 35px;
+    }
+    
+    .policy-img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    /* Achievements / Stats */
     .stats-list {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-    }
-    .stats-list li { 
-        text-align: center; 
-        border-left: none; 
-        border-top: 5px solid var(--primary-color); 
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 25px;
     }
 
     /* Career Layout */
@@ -54,47 +78,59 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
-        gap: 40px;
-        text-align: left;
+        gap: 50px;
     }
-    .career-text { text-align: left; }
     
-    .career-image img { 
-        height: 450px; 
-        border-radius: 8px;
+    .career-image img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        border-radius: 12px;
     }
 
-    /* Contact Page Enhancements */
+    /* ==================== CONTACT PAGE ==================== */
     .contact-details {
         display: flex;
         justify-content: space-around;
         text-align: left;
+        gap: 30px;
     }
+    
     .contact-details p {
         flex: 1;
-        margin: 0 15px;
+        margin: 0;
     }
-
+    
     .map iframe {
-        height: 400px;
+        height: 420px;
+        width: 100%;
     }
-
-    .quote-form {
-        display: flex;
-        justify-content: center;
-    }
+    
     .contact-form {
-        width: 60%;
+        width: 65%;
+        max-width: 700px;
     }
 
+    /* Social Links */
     .social-links {
-        justify-content: center;
-        gap: 40px;
+        gap: 35px;
     }
 
-    /* Hovers */
-    .preview-item:hover, .policy-card:hover {
-        transform: translateY(-5px);
-        transition: 0.3s;
+    /* ==================== HOVER EFFECTS ==================== */
+    .preview-item,
+    .policy-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .preview-item:hover,
+    .policy-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    /* Optional: Make all images in content areas consistent */
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
