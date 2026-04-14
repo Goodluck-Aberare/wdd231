@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services | True Light Global Resource</title>
-    <meta name="description" content="Explore our range of petroleum products and logistics services.">
-    <meta name="author" content="Your Name">
+    
+    <meta name="description" content="Explore our 15+ specialized services including Petroleum supply, Fleet Maintenance, and Industrial Equipment in Nigeria.">
+    <meta name="author" content="Goodluck Aberare">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
     <header>
         <nav>
-            <div class="brand"><span>True Light</span></div>
-            <button id="menu-button">☰</button>
-            <ul class="nav-links">
+            <div class="brand">
+                <img src="images/logo.jpg" alt="True Light Logo" width="50" height="50" loading="lazy">
+                <span>True Light Global Resource</span>
+            </div>
+            <button id="menu-button" aria-label="Toggle Menu">☰</button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html" class="active">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -23,21 +33,131 @@
     </header>
 
     <main>
-        <h2>Industrial Solutions</h2>
-        <div id="service-cards" class="grid-container"></div>
+        <section class="hero">
+            <h1>Our Full Service Catalog</h1>
+            <p>Providing the backbone for Nigeria's energy, logistics, and industrial sectors.</p>
+        </section>
 
-        <dialog id="detail-modal">
-            <h3 id="modal-title"></h3>
-            <p id="modal-body"></p>
-            <button id="close-modal">Close</button>
-        </dialog>
+        <section class="services-grid-container">
+            <div class="service-preview-grid">
+                <div class="preview-item">
+                    <img src="images/diesel.jpeg" alt="AGO (Diesel) Bulk" loading="lazy">
+                    <h3>AGO (Diesel) Bulk</h3>
+                    <p>High-quality Automotive Gas Oil for industrial fleets.</p>
+                    <p class="policy-content"><strong>Category:</strong> Petroleum | <strong>Price:</strong> Market Rate</p>
+                </div>
+
+                <div class="preview-item">
+                    <img src="images/brakes.jpg" alt="Heavy Duty Brake Pads" loading="lazy">
+                    <h3>Heavy Duty Brake Pads</h3>
+                    <p>Premium ceramic pads for Mack and Volvo trucks.</p>
+                    <p class="policy-content"><strong>Category:</strong> Maintenance | <strong>Price:</strong> $240</p>
+                </div>
+
+                <div class="preview-item">
+                    <img src="images/petro.jpg" alt="PMS (Petrol) Supply" loading="lazy">
+                    <h3>PMS (Petrol) Supply</h3>
+                    <p>Premium Motor Spirit delivered for retail and corporate clients.</p>
+                    <p class="policy-content"><strong>Category:</strong> Petroleum | <strong>Price:</strong> Market Rate</p>
+                </div>
+
+                <div class="preview-item">
+                    <img src="images/kerosene.jpg" alt="DPK (Kerosene)" loading="lazy">
+                    <h3>DPK (Kerosene)</h3>
+                    <p>Domestic and industrial kerosene for households and factories.</p>
+                    <p class="policy-content"><strong>Category:</strong> Petroleum | <strong>Price:</strong> Market Rate</p>
+                </div>
+
+                <div class="preview-item">
+                    <img src="images/lubricants.jpg" alt="Lubricants & Grease" loading="lazy">
+                    <h3>Lubricants & Grease</h3>
+                    <p>Industrial-grade lubricants for engines and heavy machinery.</p>
+                    <p class="policy-content"><strong>Category:</strong> Maintenance | <strong>Price:</strong> Market Rate</p>
+                </div>
+
+                <div class="preview-item">
+                    <img src="images/truck_tires.png" alt="Truck Tires" loading="lazy">
+                    <h3>Truck Tires (Heavy Duty)</h3>
+                    <p>Durable tires designed for long-haul trucks and tankers.</p>
+                    <p class="policy-content"><strong>Category:</strong> Maintenance | <strong>Price:</strong> $350</p>
+                </div>
+
+                <div class="preview-item">
+                    <img src="images/lpg.jpg" alt="Gas Cylinder Refilling" loading="lazy">
+                    <h3>Gas Cylinder Refilling</h3>
+                    <p>Safe and reliable LPG refilling for homes and businesses.</p>
+                    <p class="policy-content"><strong>Category:</strong> Gas | <strong>Price:</strong> Market Rate</p>
+                </div>
+
+                <div class="preview-item">
+                    <img src="images/fuel_pump.png" alt="Fuel Dispenser Pumps" loading="lazy">
+                    <h3>Fuel Dispenser Pumps</h3>
+                    <p>Accurate and reliable pumps for fuel stations.</p>
+                    <p class="policy-content"><strong>Category:</strong> Equipment | <strong>Price:</strong> $900</p>
+                </div>
+
+                <div class="preview-item">
+                    <img src="images/tankfarm.jpg" alt="Tank Farm Storage" loading="lazy">
+                    <h3>Tank Farm Storage</h3>
+                    <p>Bulk storage solutions for petroleum products in Lagos.</p>
+                    <p class="policy-content"><strong>Category:</strong> Infrastructure | <strong>Price:</strong> Contract Basis</p>
+                </div>
+
+                <div class="preview-item">
+                    <img src="images/fleet.jpg" alt="Fleet Maintenance" loading="lazy">
+                    <h3>Fleet Maintenance</h3>
+                    <p>Comprehensive servicing for trucks and industrial vehicles.</p>
+                    <p class="policy-content"><strong>Category:</strong> Maintenance | <strong>Price:</strong> From $150</p>
+                </div>
+
+                <div class="preview-item">
+                    <img src="images/cleanup.jpg" alt="Oil Spill Cleanup" loading="lazy">
+                    <h3>Oil Spill Cleanup</h3>
+                    <p>Rapid response and remediation for oil spill incidents.</p>
+                    <p class="policy-content"><strong>Category:</strong> Environmental | <strong>Price:</strong> Contract Basis</p>
+                </div>
+
+                <div class="preview-item">
+                    <img src="images/safety.jpg" alt="Industrial Safety Gear" loading="lazy">
+                    <h3>Industrial Safety Gear</h3>
+                    <p>Helmets, gloves, and protective wear for oilfield workers.</p>
+                    <p class="policy-content"><strong>Category:</strong> Safety | <strong>Price:</strong> Varies</p>
+                </div>
+
+                <div class="preview-item">
+                    <img src="images/calibration.jpg" alt="Calibration Services" loading="lazy">
+                    <h3>Calibration Services</h3>
+                    <p>Precision calibration of pumps, meters, and gauges.</p>
+                    <p class="policy-content"><strong>Category:</strong> Technical | <strong>Price:</strong> From $100</p>
+                </div>
+
+                <div class="preview-item">
+                    <img src="images/truck.jpg" alt="Fuel Truck Leasing" loading="lazy">
+                    <h3>Fuel Truck Leasing</h3>
+                    <p>Flexible leasing options for fuel distribution trucks.</p>
+                    <p class="policy-content"><strong>Category:</strong> Logistics | <strong>Price:</strong> Contract Basis</p>
+                </div>
+
+                <div class="preview-item">
+                    <img src="images/generator.jpg" alt="Power Generator Supply" loading="lazy">
+                    <h3>Power Generator Supply</h3>
+                    <p>Diesel and gas-powered generators for industrial use.</p>
+                    <p class="policy-content"><strong>Category:</strong> Energy | <strong>Price:</strong> Market Rate</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-contact">
+            <h2>Partner With Us</h2>
+            <p>Get professional delivery and technical support for your business.</p>
+            <a href="contact.html" class="cta-button">Get a Custom Quote</a>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 True Light Global Resource | <a href="YOUR_VIDEO_LINK">Video Link</a></p>
+        <p>&copy; 2026 True Light Global Resource | <a href="#">Project Video</a></p>
     </footer>
 
     <script src="scripts/main.js" type="module"></script>
-    <script src="scripts/services.js" type="module"></script>
 </body>
 </html>
