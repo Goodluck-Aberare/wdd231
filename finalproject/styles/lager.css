@@ -15,54 +15,44 @@
     .hero { padding: 120px 20px; }
     .hero h1 { font-size: 3.5rem; }
 
-    /* Grids & Image Fixes */
+    /* THE 3-COLUMN GRID FIX */
     .service-preview-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* Exactly 3 per row */
         gap: 30px;
     }
 
-    /* Increase image height for desktop so they aren't small strips */
+    /* Uniform image height for desktop grid */
     .preview-item img {
-        height: 300px; 
+        height: 250px; 
     }
-    
+
+    /* Policy Grid */
     .policy-container { 
         display: grid;
         grid-template-columns: 1fr 1fr; 
         gap: 30px;
     }
 
-    .policy-img {
-        height: 350px; /* Larger images for the policy section */
-    }
-
-    /* Achievements */
+    /* Stats/Achievements Grid */
     .stats-list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
-    .stats-list li { text-align: center; border-left: none; border-top: 5px solid var(--primary-color); }
-
-    /* Career Layout */
-    .career-layout {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        gap: 40px;
-        text-align: left;
-    }
-    .career-text { text-align: left; }
-    
-    .career-image img { 
-        height: 450px; 
-        border-radius: 8px;
+    .stats-list li { 
+        text-align: center; 
+        border-left: none; 
+        border-top: 5px solid var(--primary-color); 
     }
 
-    /* Hovers */
-    .preview-item:hover, .policy-card:hover {
-        transform: translateY(-5px);
-        transition: 0.3s;
+    /* Hover Effects */
+    .preview-item {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .preview-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     }
 }
