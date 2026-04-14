@@ -43,7 +43,11 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
-    .stats-list li { text-align: center; border-left: none; border-top: 5px solid var(--primary-color); }
+    .stats-list li { 
+        text-align: center; 
+        border-left: none; 
+        border-top: 5px solid var(--primary-color); 
+    }
 
     /* Career Layout */
     .career-layout {
@@ -58,6 +62,34 @@
     .career-image img { 
         height: 450px; 
         border-radius: 8px;
+    }
+
+    /* Contact Page Enhancements */
+    .contact-details {
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+    }
+    .contact-details p {
+        flex: 1;
+        margin: 0 15px;
+    }
+
+    .map iframe {
+        height: 400px;
+    }
+
+    .quote-form {
+        display: flex;
+        justify-content: center;
+    }
+    .contact-form {
+        width: 60%;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 40px;
     }
 
     /* Hovers */
