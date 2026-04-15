@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact us | True Light Global Resource - Petroleum & Logistics Nigeria</title>
+  <title>Contact Us | True Light Global Resource</title>
   
-  <meta name="description" content="True Light Global Resource provides expert petroleum procurement, oil and gas logistics, and heavy-duty truck maintenance in Nigeria. Reliable energy solutions since 2026.">
+  <meta name="description" content="Get in touch with True Light Global Resource for petroleum procurement, logistics, and truck maintenance services in Nigeria.">
   <meta name="author" content="Goodluck Aberare">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,46 +33,74 @@
   </header>
 
   <main>
-    <section class="intro">
-      <h1>Contact Us</h1>
-      <p>At <strong>True Light Global Resource</strong>, we are committed to providing reliable petroleum procurement, efficient logistics, and expert truck maintenance services across Nigeria. Reach out to us today for tailored solutions that keep your business moving forward.</p>
+    <section class="hero contact-hero">
+      <h1>Get In Touch</h1>
+      <p>We’re ready to support your energy and logistics needs. Reach out today.</p>
     </section>
 
-    <section class="contact-details">
-      <h2>Our Office</h2>
-      <p><strong>Address:</strong> Plot 12, Energy Drive, Victoria Island, Lagos, Nigeria</p>
-      <p><strong>Phone:</strong> +234 810 516 6324</p>
-      <p><strong>Email:</strong> info@truelightglobal.com</p>
-      <p><strong>Working Hours:</strong> Monday – Friday, 8:00 AM – 6:00 PM</p>
+    <section class="contact-section">
+      <div class="contact-grid">
+        
+        <!-- Left Column: Contact Info + Map -->
+        <div class="contact-info">
+          <h2>Our Office</h2>
+          <div class="contact-details">
+            <p><strong>Address:</strong> Plot 12, Energy Drive, Victoria Island, Lagos, Nigeria</p>
+            <p><strong>Phone:</strong> +234 810 516 6324</p>
+            <p><strong>Email:</strong> info@truelightglobal.com</p>
+            <p><strong>Working Hours:</strong> Monday – Friday, 8:00 AM – 6:00 PM</p>
+          </div>
+
+          <h2>Find Us</h2>
+          <div class="map">
+            <iframe src="https://maps.google.com/maps?q=Victoria%20Island%20Lagos&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Right Column: Quote Form -->
+        <div class="quote-form">
+          <h2>Request a Service Quote</h2>
+          <form action="thank-you.html" method="get" class="contact-form">
+            <label>
+              Full Name
+              <input type="text" name="fname" required>
+            </label>
+            
+            <label>
+              Email Address
+              <input type="email" name="email" required>
+            </label>
+
+            <label>
+              Phone Number
+              <input type="tel" name="phone">
+            </label>
+
+            <label>
+              Service Interested In
+              <select name="service" required>
+                <option value="">Select a service</option>
+                <option value="petroleum">Petroleum Procurement</option>
+                <option value="logistics">Logistics & Haulage</option>
+                <option value="maintenance">Fleet Maintenance</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+
+            <label>
+              Message / Requirements
+              <textarea name="comments" rows="5" placeholder="Please describe your needs..."></textarea>
+            </label>
+
+            <input type="submit" value="Send Request" class="cta-button">
+          </form>
+        </div>
+      </div>
     </section>
 
-    <section class="map">
-      <h2>Find Us</h2>
-      <p>We are located in the heart of Lagos. Use the map below to get directions to our office.</p>
-      <!-- Placeholder for Google Maps embed -->
-      <iframe src="https://maps.google.com/maps?q=Victoria%20Island%20Lagos&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-
-    <section class="quote-form">
-      <h2>Request a Service Quote</h2>
-      <form action="thank-you.html" method="get" class="contact-form">
-        <label>Name: <input type="text" name="fname" required></label>
-        <label>Email: <input type="email" name="email" required></label>
-        <label>Service Type:
-          <select name="service">
-            <option value="petroleum">Petroleum Procurement</option>
-            <option value="logistics">Logistics</option>
-            <option value="maintenance">Truck Maintenance</option>
-          </select>
-        </label>
-        <label class="form-item-full">Comments:  
-          <textarea name="comments" rows="4"></textarea>
-        </label>
-        <input type="submit" value="Send Request" class="cta-button">
-      </form>
-    </section>
-
-    <section class="social">
+    <!-- Social Section -->
+    <section class="social-section">
       <h2>Connect With Us</h2>
       <ul class="social-links">
         <li><a href="https://facebook.com/truelightglobal" target="_blank">Facebook</a></li>
