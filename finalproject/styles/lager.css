@@ -1,227 +1,175 @@
-/* larger.css - Premium Look with 3-Column Grid on services.html */
-
 @media (min-width: 768px) {
 
-    /* ==================== HEADER / NAV ==================== */
-    #menu-button { 
-        display: none; 
+    /* =========================
+       NAVIGATION (DESKTOP)
+    ========================== */
+    #menu-button {
+        display: none;
     }
-    
+
+    nav {
+        max-width: 1200px;
+        margin: auto;
+    }
+
     .nav-links {
         display: flex !important;
         flex-direction: row;
         position: static;
         width: auto;
         background: transparent;
-        gap: 15px;
-    }
-    
-    .nav-links li a { 
-        border: none; 
-        padding: 14px 26px;
-        font-weight: 500;
-        position: relative;
-    }
-    
-    .nav-links li a:after {
-        content: '';
-        position: absolute;
-        bottom: 8px;
-        left: 26px;
-        width: 0;
-        height: 2px;
-        background: var(--secondary-color);
-        transition: var(--transition);
-    }
-    
-    .nav-links li a:hover:after {
-        width: calc(100% - 52px);
+        gap: 10px;
     }
 
-    /* ==================== HERO ==================== */
-    .hero { 
-        padding: 200px 20px; 
-        background: linear-gradient(rgba(0,51,102,0.75), rgba(0,51,102,0.85)), url('../images/hero.jpg') center/cover;
-    }
-    
-    .hero h1 { 
-        font-size: 4.5rem; 
-        line-height: 1.05;
-        text-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    .nav-links li a {
+        border: none;
+        padding: 10px 15px;
+        transition: 0.3s;
     }
 
-    /* ==================== SERVICE GRID - 3 COLUMNS ON DESKTOP ==================== */
-    .service-preview-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));   /* Flexible but aims for 3 */
-        gap: 40px;
-    }
-
-    /* Force exactly 3 columns on larger screens */
-    @media (min-width: 1024px) {
-        .service-preview-grid {
-            grid-template-columns: repeat(3, 1fr);   /* Strict 3-column grid */
-        }
-    }
-
-    .preview-item {
-        display: flex;
-        flex-direction: column;
-        background: var(--white);
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0, 51, 102, 0.08);
-        height: 100%;
-        position: relative;
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .preview-item img {
-        width: 100%;
-        aspect-ratio: 16 / 9;
-        object-fit: cover;
-        flex-shrink: 0;
-        transition: transform 0.6s ease;
-    }
-
-    /* Premium Hover Effect */
-    .preview-item::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to top, rgba(0,51,102,0.85), rgba(0,51,102,0.25) 60%, transparent);
-        opacity: 0;
-        transition: opacity 0.4s ease;
-        z-index: 1;
-    }
-
-    .preview-item:hover {
-        transform: translateY(-15px);
-        box-shadow: 0 25px 50px rgba(0, 51, 102, 0.18);
-    }
-
-    .preview-item:hover img {
-        transform: scale(1.08);
-    }
-
-    .preview-item:hover::after {
-        opacity: 1;
-    }
-
-    .preview-item > h3,
-    .preview-item > p {
-        padding: 0 28px;
-        position: relative;
-        z-index: 2;
-    }
-
-    .preview-item h3 {
-        margin: 24px 0 14px;
-        font-size: 1.45rem;
-        color: var(--primary-color);
-    }
-
-    .preview-item:hover h3 {
+    .nav-links li a:hover {
         color: var(--secondary-color);
     }
 
-    .preview-item p {
-        flex-grow: 1;
-        margin-bottom: 24px;
-        color: var(--text-muted);
-        line-height: 1.7;
+    /* =========================
+       GLOBAL CONTAINER CONTROL
+    ========================== */
+    section {
+        padding: 60px 40px;
     }
 
-    /* ==================== POLICY SECTION ==================== */
+    /* =========================
+       HERO SECTION
+    ========================== */
+    .hero {
+        padding: 140px 20px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    /* =========================
+       SERVICE GRID (MAIN FIX)
+    ========================== */
+    .service-preview-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        align-items: stretch;
+    }
+
+    .preview-item {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .preview-item img {
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    /* =========================
+       POLICY SECTION (2 COLUMN FIX)
+    ========================== */
     .policy-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
-        gap: 45px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        align-items: stretch;
     }
 
     .policy-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
         display: flex;
         flex-direction: column;
-        background: var(--white);
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0, 51, 102, 0.08);
-        height: 100%;
-        transition: all 0.4s ease;
     }
 
     .policy-img {
-        width: 100%;
-        aspect-ratio: 16 / 9;
+        height: 300px;
         object-fit: cover;
-        flex-shrink: 0;
     }
 
-    .policy-card:hover {
-        transform: translateY(-12px);
-        box-shadow: 0 25px 50px rgba(0, 51, 102, 0.15);
-    }
-
-    .policy-card:hover .policy-img {
-        transform: scale(1.05);
-    }
-
-    .policy-content {
-        padding: 32px;
-        flex-grow: 1;
-    }
-
-    /* ==================== CAREER SECTION ==================== */
-    .career-layout {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 80px;
-        align-items: center;
-    }
-
-    .career-image img {
-        width: 100%;
-        aspect-ratio: 16 / 10;
-        object-fit: cover;
-        border-radius: 20px;
-        box-shadow: 0 15px 40px rgba(0, 51, 102, 0.12);
-    }
-
-    /* ==================== ACHIEVEMENTS ==================== */
+    /* =========================
+       ACHIEVEMENTS (CLEAN DASHBOARD)
+    ========================== */
     .stats-list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 30px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        text-align: center;
     }
 
     .stats-list li {
-        background: var(--white);
-        padding: 28px 20px;
-        border-radius: 16px;
-        text-align: center;
-        box-shadow: 0 8px 25px rgba(0, 51, 102, 0.06);
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        border-top: 4px solid var(--primary-color);
     }
 
-    /* General */
-    img {
-        display: block;
-        max-width: 100%;
+    /* =========================
+       CAREERS SECTION
+    ========================== */
+    .career-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+        text-align: left;
     }
 
-    section h2 {
-        font-size: 2.6rem;
-        margin-bottom: 2.5rem;
-        position: relative;
-        display: inline-block;
+    .career-text {
+        text-align: left;
     }
 
-    section h2:after {
-        content: '';
-        position: absolute;
-        bottom: -8px;
-        left: 0;
-        width: 60px;
-        height: 3px;
-        background: var(--secondary-color);
+    .career-image img {
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    /* =========================
+       CONTACT PAGE (IMPORTANT FIX)
+    ========================== */
+    .contact-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        text-align: left;
+        align-items: start;
+    }
+
+    .map iframe {
+        height: 350px;
+    }
+
+    .contact-form {
+        max-width: 700px;
+    }
+
+    /* =========================
+       HOVER EFFECTS (PRO FEEL)
+    ========================== */
+    .preview-item:hover,
+    .policy-card:hover {
+        transform: translateY(-6px);
+        transition: 0.3s ease;
     }
 }
